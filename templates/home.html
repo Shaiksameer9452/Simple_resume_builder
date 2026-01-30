@@ -1,8 +1,12 @@
-{{extends "layout.html"}}
-
-{{block "title"}}Home{{end}}
-
-{{block "body"}}
-    <h1>Welcome to the Simple Resume Builder!</h1>
-    <p>Create and manage your resumes with ease.</p>
-{{end}}
+{% extends "layout.html" %}
+{% block title %} Simple Resume Builder {% endblock %}
+{% block content %}
+<div class="home">
+    <h2>Build Your Resume Easily</h2>
+    <p>
+        Simple Resume Builder helps students and beginners create a clean and
+        professional resume in just a few steps.
+    </p>
+    <a href="/create" class="btn">Create Resume</a>
+</div>
+{% endblock %}
