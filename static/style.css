@@ -11,3 +11,88 @@
     text-decoration: none;
     margin-top: 20px;
 }
+
+/* Resume container */
+.resume {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #ddd;
+}
+
+/* Name */
+.resume h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Contact details */
+.resume p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Section headings */
+.resume h3 {
+    margin-top: 25px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Skills list */
+.resume ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.resume ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Horizontal line */
+.resume hr {
+    margin: 20px 0;
+}
+
+/* Download / Print button */
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 18px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #333;
+}
+
+/* Print settings */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .resume, .resume * {
+        visibility: visible;
+    }
+
+    .resume {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn {
+        display: none;
+    }
+}
