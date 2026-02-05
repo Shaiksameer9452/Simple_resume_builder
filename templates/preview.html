@@ -18,6 +18,13 @@
         {% endfor %}
     </ul>
     <h3>Projects</h3>
+    <ul>
+    {% for project in resume.projects.split('\n') %}
+        {% if project.strip() %}
+            <li>{{ project }}</li>
+        {% endif %}
+    {% endfor %}
+    </ul>
     <p>{{ resume.projects }}</p>
     <a href="#" onclick="window.print()" class="btn">Download / Print</a>
 </div>
