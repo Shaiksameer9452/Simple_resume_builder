@@ -96,3 +96,219 @@
         display: none;
     }
 }
+
+/* Page background */
+body {
+    background-color: #f4f6f8;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+/* Main resume card */
+.resume-container {
+    background: #ffffff;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Name */
+.name {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+/* Contact info */
+.contact {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Section styling */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Button */
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #2d89ef;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1b5fbf;
+}
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .resume-container {
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .btn {
+        display: none;
+    }
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background: #ffffff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d89ef;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #2d89ef;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    font-size: 14px;
+    color: #777;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Form Card */
+.form-card {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.form-card h2 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Form Layout */
+.resume-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    transition: border 0.2s ease;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2d89ef;
+    outline: none;
+}
+
+/* Button */
+.btn-primary {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    background: #2d89ef;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #1b5fbf;
+}
