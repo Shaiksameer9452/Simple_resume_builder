@@ -1,31 +1,30 @@
-{% extends "layout.html" %}
-{% block title %}Resume Preview{% endblock %}
-{% block content %}
-<div class="resume">
-
-    <h2>{{ resume.name }}</h2>
-    <p>
-        <strong>Email:</strong> {{ resume.email }} <br>
-        <strong>Phone:</strong> {{ resume.phone }}
+<div class="resume-container">
+    <h2 class="name">{{ resume.name }}</h2>
+    <p class="contact">
+        {{ resume.email }} | {{ resume.phone }}
     </p>
-    <hr>
-    <h3>Education</h3>
-    <p>{{ resume.education }}</p>
-    <h3>Skills</h3>
-    <ul>
-        {% for skill in resume.skills.split(',') %}
-            <li>{{ skill.strip() }}</li>
-        {% endfor %}
-    </ul>
-    <h3>Projects</h3>
-    <ul>
-    {% for project in resume.projects.split('\n') %}
-        {% if project.strip() %}
-            <li>{{ project }}</li>
-        {% endif %}
-    {% endfor %}
-    </ul>
-    <p>{{ resume.projects }}</p>
-    <a href="#" onclick="window.print()" class="btn">Download / Print</a>
+
+    <div class="section">
+        <h3>Skills</h3>
+        <ul>
+            {% for skill in resume.skills.split(',') %}
+                {% if skill.strip() %}
+                    <li>{{ skill.strip() }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Projects</h3>
+        <ul>
+            {% for project in resume.projects.split('\n') %}
+                {% if project.strip() %}
+                    <li>{{ project }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    <button onclick="window.print()" class="btn">Download</button>
 </div>
-{% endblock %}
