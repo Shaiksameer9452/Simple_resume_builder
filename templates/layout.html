@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Simple Resume Builder{% endblock %}</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
@@ -10,8 +14,8 @@
 <body>
 
     <!-- Header -->
-    <header>
-        <h1>Simple Resume Builder</h1>
+    <header class="navbar">
+        <div class="logo">Simple Resume Builder</div>
         <nav>
             <a href="/">Home</a>
             <a href="/create">Create Resume</a>
@@ -19,14 +23,14 @@
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main class="main-content">
         {% block content %}
         {% endblock %}
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Simple Resume Builder </p>
+    <footer class="footer">
+        <p>&copy; 2026 Simple Resume Builder</p>
     </footer>
 
 </body>
