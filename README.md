@@ -3,7 +3,7 @@
 A web-based Resume Builder application built using **Flask, SQLite, HTML, CSS, and Jinja2**.  
 This application allows users to create, preview, and download a professional resume easily.
 
----
+
 
 ##  Features
 
@@ -17,7 +17,7 @@ This application allows users to create, preview, and download a professional re
 - Clean and modern UI
 - Basic caching using `functools.cache`
 
----
+
 
 ##  Technologies Used
 
@@ -29,7 +29,7 @@ This application allows users to create, preview, and download a professional re
 - Jinja2
 - functools.cache (for performance optimization)
 
----
+
 
 ##  Project Structure
 resume-builder/
@@ -47,7 +47,7 @@ resume-builder/
 └── static/
 └── style.css
 
----
+
 
 ##  Database Design
 
@@ -65,7 +65,7 @@ resume-builder/
 - projects
 - created_at
 
----
+
 
 ##  How Resume Updating Works
 
@@ -75,7 +75,7 @@ resume-builder/
   - Duplicate projects are automatically removed
   - Resume ID remains unchanged
 
----
+
 
 ##  Caching
 
@@ -84,7 +84,7 @@ The preview route uses:
 This improves performance by caching resume data.  
 Cache is cleared automatically when the resume is updated.
 
----
+
 
 ##  Learning Objectives
 
@@ -96,7 +96,7 @@ Cache is cleared automatically when the resume is updated.
 - Caching optimization
 - Clean UI design
 
----
+
 
 ##  Future Improvements
 
@@ -107,13 +107,13 @@ Cache is cleared automatically when the resume is updated.
 - Export directly to PDF
 - Deployment on cloud
 
----
+
 
 ##  Author
 
 Developed as a learning project to practice full-stack web development using Flask.
 
----
+
 
 ##  License
 
