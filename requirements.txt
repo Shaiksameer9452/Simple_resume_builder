@@ -1,4 +1,2 @@
 Flask
-functools
-sqlite3
-datetime
+gunicorn
