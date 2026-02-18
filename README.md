@@ -32,6 +32,7 @@ This application allows users to create, preview, and download a professional re
 
 
 ##  Project Structure
+~~~~
 resume-builder/
 │
 ├── app.py
@@ -46,7 +47,7 @@ resume-builder/
 │
 └── static/
 └── style.css
-
+~~~~
 
 
 ##  Database Design
